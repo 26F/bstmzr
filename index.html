@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<script src="tofile.js"></script>
+	<script src="graph.js"></script>
+	<script src="fromfile.js"></script>
+	<script src="ui.js"></script>
+	<script src="test.js"></script>
+
+
+
+</head>
+<body>
+<div id="textentry"></div>
+<form >
+  <p><label for="noteentry"></label></p>
+  <textarea hidden="true" id="currentnote" rows="40" cols="160">your notes (escape to exit and save.)</textarea>
+  <br>
+</form>
+<div style="margin-left: 350px; margin-right: 350px;" id="mathjaxdsp" hidden="true"></div>
+<canvas id="canvas"></canvas>
+<input type="file" id="parse">
+<br>
+<p id="outputbx"></p>
+<button id="submit" onclick="writefile()"> save file</button>
+</body>
+</html>
